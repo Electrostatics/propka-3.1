@@ -137,6 +137,8 @@ class MolecularContainer:
             reference:  reference state
             direction:  folding vs. unfolding
             options:  options object
+        Returns:
+            string with filename
         """
         if filename is None:
             filename = os.path.join('{0:s}.pka'.format(self.name))
@@ -152,6 +154,7 @@ class MolecularContainer:
         write_pka(
             self, self.version.parameters, filename=filename,
             conformation='AVR', reference=reference)
+        return filename
 
     def get_folding_profile(self, conformation='AVR', reference="neutral",
                             grid=[0., 14., 0.1]):

@@ -109,6 +109,8 @@ def write_pka(protein, parameters, filename=None, conformation='1A',
         _:  "folding" or other
         verbose:  Boolean flag for verbosity
         __:  options object
+    Returns:
+        string with path of created filename
     """
     # TODO - the code immediately overrides the verbose argument; why?
     verbose = True
@@ -136,6 +138,7 @@ def write_pka(protein, parameters, filename=None, conformation='1A',
     # now, writing the pka text to file
     file_.write(str_)
     file_.close()
+    return filename
 
 
 def print_tm_profile(protein, reference="neutral", window=[0., 14., 1.],
