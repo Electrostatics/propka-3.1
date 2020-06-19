@@ -366,7 +366,7 @@ def get_propka_header():
         string
     """
     today = date.today()
-    str_ = "propka3.1 {0!s:>93s}\n".format(today)
+    str_ = "propka3.2 {0!s:>93s}\n".format(today)
     str_ += """
 -------------------------------------------------------------------------------
 --                                                                           --
@@ -383,6 +383,9 @@ def get_propka_header():
 --                                                                           --
 --  VERSION 3.1,  07/01/2011, COPENHAGEN                                     --
 --  BY CHRESTEN R. SONDERGARD AND MATS H.M. OLSSON                           --
+--                                                                           --
+--  VERSION 3.2,  06/17/2020, PLANET EARTH                                   --
+--  SEE ABOVE FOR AUTHORS                                                    --
 --                                                                           --
 -------------------------------------------------------------------------------
 """
